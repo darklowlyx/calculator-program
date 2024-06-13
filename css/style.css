@@ -1,0 +1,89 @@
+@import "nullstyle.css";
+
+* {
+	color: #f0f0f0;
+}
+
+body {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	height: 100vh;
+	background-color: #111;
+}
+#display::selection {
+	background: hsl(0, 0%, 50%); /* Safari */
+}
+
+#display::-moz-selection {
+	background: hsl(0, 0%, 50%); /* Firefox */
+}
+button {
+	width: 100px;
+	height: 100px;
+	border-radius: 50%;
+	background-color: #222;
+	color: #fff;
+	font-size: 3rem;
+	font-weight: 700;
+	transition: background-color 0.2s ease;
+}
+button:hover {
+	background-color: #333;
+}
+button:active {
+	background-color: #333;
+}
+#calculator {
+	flex: 0 1 auto;
+	background-color: #000;
+	border-radius: 30px;
+	overflow: hidden;
+	max-width: 500px;
+	min-height: 600px;
+	margin: 0 auto;
+	font-family: Arial, sans-serif;
+}
+#display {
+	background-color: #222;
+	width: 100%;
+	padding: 20px;
+	font-size: 5rem;
+	text-align-last: left;
+	outline: none;
+}
+#keys {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	gap: 0.625rem;
+	padding: 1.5625rem;
+}
+
+.operator-btn {
+	background-color: hsl(355, 86%, 45%);
+}
+.operator-btn:hover {
+	background-color: hsl(355, 86%, 60%);
+}
+.operator-btn:active {
+	background-color: hsl(355, 86%, 60%);
+}
+@media (max-width: 32.5em) {
+	button {
+		width: 80px;
+		height: 80px;
+	}
+	#calculator {
+		max-width: 400px;
+	}
+}
+@media (max-width: 25.625em) {
+	button {
+		width: 70px;
+		height: 70px;
+	}
+	#calculator {
+		max-width: 350px;
+	}
+}
