@@ -2,6 +2,7 @@
 
 * {
 	color: #f0f0f0;
+	font-family: "Archivo Black", Arial, sans-serif;
 }
 
 body {
@@ -43,7 +44,7 @@ button:active {
 	max-width: 500px;
 	min-height: 600px;
 	margin: 0 auto;
-	font-family: Arial, sans-serif;
+	font-family: "Archivo Black", Arial, sans-serif;
 }
 #display {
 	background-color: #222;
