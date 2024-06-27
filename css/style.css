@@ -2,7 +2,8 @@
 
 * {
 	color: #f0f0f0;
-	font-family: "Archivo Black", Arial, sans-serif;
+	font-family: "Rubik", Arial, sans-serif;
+	font-weight: 700;
 }
 
 body {
@@ -21,13 +22,12 @@ body {
 	background: hsl(0, 0%, 50%); /* Firefox */
 }
 button {
-	width: 100px;
-	height: 100px;
+	width: 95px;
+	height: 95px;
 	border-radius: 50%;
 	background-color: #222;
 	color: #fff;
-	font-size: 3rem;
-	font-weight: 700;
+	font-size: 2.5rem;
 	transition: background-color 0.2s ease;
 }
 button:hover {
@@ -44,7 +44,8 @@ button:active {
 	max-width: 500px;
 	min-height: 600px;
 	margin: 0 auto;
-	font-family: "Archivo Black", Arial, sans-serif;
+	font-family: "Rubik", Arial, sans-serif;
+	font-weight: 700;
 }
 #display {
 	background-color: #222;
